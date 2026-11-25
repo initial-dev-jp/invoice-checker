@@ -1,0 +1,252 @@
+[
+  {
+    "category": "レシート・屋号逆引きの調査術",
+    "slug": "taxi-receipt-t-number-lookup",
+    "title": "個人タクシーの領収書でT番号がない？屋号逆引きと特例の使い方"
+  },
+  {
+    "category": "レシート・屋号逆引きの調査術",
+    "slug": "coin-parking-receipt-faded-lookup",
+    "title": "コインパーキング領収書の印字消え！運営会社特定とT番号確認手順"
+  },
+  {
+    "category": "レシート・屋号逆引きの調査術",
+    "slug": "amazon-seller-invoice-check",
+    "title": "Amazon出品者が免税事業者か見分ける方法と適格請求書の落とし穴"
+  },
+  {
+    "category": "レシート・屋号逆引きの調査術",
+    "slug": "franchise-store-receipt-reverse-lookup",
+    "title": "フランチャイズ店レシートの屋号違い！国税庁サイトでの逆引き検索術"
+  },
+  {
+    "category": "レシート・屋号逆引きの調査術",
+    "slug": "store-name-transfer-company-discrepancy",
+    "title": "店舗名と振込先会社名が一致しない！請求書のT番号実在確認ルール"
+  },
+  {
+    "category": "レシート・屋号逆引きの調査術",
+    "slug": "mercari-shops-invoice-t-number-check",
+    "title": "メルカリShops領収書のインボイス番号はどこ？出品者確認法"
+  },
+  {
+    "category": "レシート・屋号逆引きの調査術",
+    "slug": "food-truck-event-receipt-t-number",
+    "title": "催事やキッチンカーの領収書に番号なし！適格事業者か調べる裏技"
+  },
+  {
+    "category": "少額特例・出張旅費特例・公共交通機関特例",
+    "slug": "small-amount-exception-deadline-eligibility",
+    "title": "税込1万円未満の少額特例はいつまで？対象企業と判定基準の全貌"
+  },
+  {
+    "category": "少額特例・出張旅費特例・公共交通機関特例",
+    "slug": "public-transport-exception-shinkansen",
+    "title": "3万円未満の電車・バス特例！新幹線チケット購入時の注意点と仕訳"
+  },
+  {
+    "category": "少額特例・出張旅費特例・公共交通機関特例",
+    "slug": "business-trip-allowance-invoice-exemption",
+    "title": "出張旅費規程の日当はインボイス不要？帳簿記載だけで落とす実務"
+  },
+  {
+    "category": "少額特例・出張旅費特例・公共交通機関特例",
+    "slug": "vending-machine-receipt-less-deduction",
+    "title": "自動販売機のジュース代は領収書なしでOK？帳簿のみ控除の境界線"
+  },
+  {
+    "category": "少額特例・出張旅費特例・公共交通機関特例",
+    "slug": "hotel-expense-reimbursement-special-rules",
+    "title": "社員が立替えたホテル宿泊費！少額特例と出張旅費特例の併用判断"
+  },
+  {
+    "category": "少額特例・出張旅費特例・公共交通機関特例",
+    "slug": "short-distance-taxi-public-transport-rule",
+    "title": "近距離タクシー代は公共交通機関特例になる？領収書必須の理由"
+  },
+  {
+    "category": "少額特例・出張旅費特例・公共交通機関特例",
+    "slug": "executive-trip-allowance-tax-audit-risk",
+    "title": "役員出張の手当も特例対象？税務調査で否認されない社内規程の作り方"
+  },
+  {
+    "category": "免税事業者との取引・経過措置（8割・5割控除）",
+    "slug": "transitional-measure-50-percent-transition",
+    "title": "2026年10月に5割控除へ移行！免税事業者への仕訳変更と準備"
+  },
+  {
+    "category": "免税事業者との取引・経過措置（8割・5割控除）",
+    "slug": "unregistered-contractor-80-percent-entry",
+    "title": "個人外注先が免税のまま！消費税8割控除の仕訳と端数処理の実務"
+  },
+  {
+    "category": "免税事業者との取引・経過措置（8割・5割控除）",
+    "slug": "price-negotiation-antimonopoly-subcontract-risk",
+    "title": "免税事業者へ一方的値下げは違法？独禁法と下請法に抵触しない交渉"
+  },
+  {
+    "category": "免税事業者との取引・経過措置（8割・5割控除）",
+    "slug": "silver-human-resources-waste-disposal-tax",
+    "title": "シルバー人材センターや廃棄物業者が免税！経過措置の会計ソフト設定"
+  },
+  {
+    "category": "免税事業者との取引・経過措置（8割・5割控除）",
+    "slug": "transitional-deduction-bookkeeping-requirements",
+    "title": "免税事業者からの仕入税額控除！帳簿に記載すべき経過措置の特記事項"
+  },
+  {
+    "category": "免税事業者との取引・経過措置（8割・5割控除）",
+    "slug": "creator-manuscript-fee-withholding-invoice",
+    "title": "個人クリエイターへの原稿料！源泉徴収税とインボイス経過措置の計算"
+  },
+  {
+    "category": "EC・ネット決済・クレカ明細のインボイス対応",
+    "slug": "credit-card-statement-insufficient-for-deduction",
+    "title": "クレカ利用明細だけでは控除不可！Web領収書回収の自動化ノウハウ"
+  },
+  {
+    "category": "EC・ネット決済・クレカ明細のインボイス対応",
+    "slug": "etc-usage-inquiry-service-highway-invoice",
+    "title": "ETC利用照会サービスでインボイス発行！高速料金の経費精算ルール"
+  },
+  {
+    "category": "EC・ネット決済・クレカ明細のインボイス対応",
+    "slug": "foreign-saas-reverse-charge-adobe-zoom",
+    "title": "AdobeやZoomの請求書はリバースチャージ？海外SaaSの消費税区分"
+  },
+  {
+    "category": "EC・ネット決済・クレカ明細のインボイス対応",
+    "slug": "google-ads-tax-invoice-ireland-japan",
+    "title": "Google広告費の適格請求書取得法！日本法人とアイルランド法人の差"
+  },
+  {
+    "category": "EC・ネット決済・クレカ明細のインボイス対応",
+    "slug": "crowdsourcing-platform-fee-invoice-handling",
+    "title": "クラウドワークス等の手数料！マッチングサイトのインボイス処理"
+  },
+  {
+    "category": "EC・ネット決済・クレカ明細のインボイス対応",
+    "slug": "mobile-suica-charge-boarding-history-invoice",
+    "title": "モバイルSuicaチャージは対象外！乗車履歴インボイスの出し方"
+  },
+  {
+    "category": "請求書・領収書の記載要件と不備修正",
+    "slug": "simplified-invoice-receipt-no-name-rules",
+    "title": "宛名なしレシートでOKな業種とは？簡易インボイスの適用基準"
+  },
+  {
+    "category": "請求書・領収書の記載要件と不備修正",
+    "slug": "invoice-tax-rounding-rule-correction",
+    "title": "1インボイス1回ルールの消費税端数計算！品目別端数処理のミス是正"
+  },
+  {
+    "category": "請求書・領収書の記載要件と不備修正",
+    "slug": "revoked-t-number-detection-and-correction",
+    "title": "取引先のT番号が失効していたら？即座にできる確認法と仕訳の修正"
+  },
+  {
+    "category": "請求書・領収書の記載要件と不備修正",
+    "slug": "incorrect-t-number-reissue-request-flow",
+    "title": "請求書のT番号打ち間違いを発見！相手先に再発行を頼む文例と手順"
+  },
+  {
+    "category": "請求書・領収書の記載要件と不備修正",
+    "slug": "handwritten-receipt-stamp-validity-check",
+    "title": "手書き領収書に登録番号スタンプ押しは有効？不備を避ける必須項目"
+  },
+  {
+    "category": "請求書・領収書の記載要件と不備修正",
+    "slug": "delivery-slip-monthly-invoice-combination",
+    "title": "納品書と月締め請求書の組み合わせ交付！複数書類で満たすインボイス"
+  },
+  {
+    "category": "個人事業主・フリーランスの登録判断",
+    "slug": "two-tenths-special-rule-end-tax-choice",
+    "title": "2割特例はいつまで使える？終了後に選ぶべき簡易課税と本則課税"
+  },
+  {
+    "category": "個人事業主・フリーランスの登録判断",
+    "slug": "five-million-freelance-invoice-registration",
+    "title": "売上500万フリーランスは登録すべき？取引先タイプ別の損得分岐点"
+  },
+  {
+    "category": "個人事業主・フリーランスの登録判断",
+    "slug": "invoice-cancellation-procedure-tax-exempt-return",
+    "title": "登録したインボイスを取り消したい！届出書の提出期限と免税復帰"
+  },
+  {
+    "category": "個人事業主・フリーランスの登録判断",
+    "slug": "general-vs-simplified-taxation-freelance-burden",
+    "title": "本則課税で大損？事務負担を最小化する簡易課税のみなし仕入率選択"
+  },
+  {
+    "category": "個人事業主・フリーランスの登録判断",
+    "slug": "construction-solo-worker-invoice-refusal",
+    "title": "一人親方のインボイス拒否はどうなる？建設業の元請下請トラブル回避"
+  },
+  {
+    "category": "個人事業主・フリーランスの登録判断",
+    "slug": "startup-sole-proprietorship-invoice-pitfall",
+    "title": "開業初年度の個人事業主！インボイス登録と同時に消費税課税を選ぶ罠"
+  },
+  {
+    "category": "電子帳簿保存法・クラウド会計連携",
+    "slug": "smartphone-photo-receipt-scanner-storage-rules",
+    "title": "スマホ撮影レシートは原本破棄OK？電帳法スキャナ保存の必須要件"
+  },
+  {
+    "category": "電子帳簿保存法・クラウド会計連携",
+    "slug": "t-number-auto-verification-cloud-accounting",
+    "title": "T番号の自動照合で入力ゼロへ！クラウド会計で経理を爆速化する技"
+  },
+  {
+    "category": "電子帳簿保存法・クラウド会計連携",
+    "slug": "electronic-money-receipt-data-storage-compliance",
+    "title": "電子マネー決済の領収書データ！電帳法とインボイスを両立する保存法"
+  },
+  {
+    "category": "電子帳簿保存法・クラウド会計連携",
+    "slug": "email-pdf-invoice-electronic-storage-management",
+    "title": "メール添付のPDF請求書！印刷保存NGを乗り切るフォルダ管理術"
+  },
+  {
+    "category": "電子帳簿保存法・クラウド会計連携",
+    "slug": "ai-ocr-receipt-scanning-cloud-verification",
+    "title": "会計ソフトのインボイス判別機能！AI-OCRの誤読を防ぐチェック法"
+  },
+  {
+    "category": "電子帳簿保存法・クラウド会計連携",
+    "slug": "freelance-paperless-free-tools-storage-setup",
+    "title": "個人事業主の電帳法完全ペーパーレス化！無料ツールでできる運用設計"
+  },
+  {
+    "category": "業種別・特殊ケースのインボイス処理",
+    "slug": "office-rent-lease-agreement-invoice-compliance",
+    "title": "事務所家賃は契約書＋振込明細でOK？貸主からの通知書が必要な理由"
+  },
+  {
+    "category": "業種別・特殊ケースのインボイス処理",
+    "slug": "expense-reimbursement-settlement-parent-subsidiary",
+    "title": "立替金精算書と領収書原本の渡し方！親会社子会社間の経費付け替え"
+  },
+  {
+    "category": "業種別・特殊ケースのインボイス処理",
+    "slug": "congratulatory-condolence-gift-tax-free-bookkeeping",
+    "title": "慶弔見舞金や香典にインボイスは不要？不課税取引の帳簿記載ルール"
+  },
+  {
+    "category": "業種別・特殊ケースのインボイス処理",
+    "slug": "company-trip-party-split-bill-invoice",
+    "title": "社員旅行や懇親会の割り勘領収書！交際費と会議費のインボイス実務"
+  },
+  {
+    "category": "業種別・特殊ケースのインボイス処理",
+    "slug": "used-car-trade-in-secondhand-dealer-exception",
+    "title": "自動車下取りや中古車買取のインボイス！古物商等特例の適用要件"
+  },
+  {
+    "category": "業種別・特殊ケースのインボイス処理",
+    "slug": "monthly-parking-lot-individual-landlord-invoice",
+    "title": "月極駐車場の契約更新！インボイス未登録の個人地主への対応マニュアル"
+  }
+]

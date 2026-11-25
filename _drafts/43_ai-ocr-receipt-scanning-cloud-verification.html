@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>会計ソフトのインボイス判別機能！AI-OCRの誤読を防ぐチェック法｜インボイスT番号・経理実務ガイド</title>
+  <meta name="description" content="クラウド会計のAI-OCRによるインボイス判別機能は入力業務を大幅に効率化しますが、登録番号の誤読や免税事業者の自動判定ミスに潜む税務リスクへの警戒が必要です。仕訳の具体例と比較表を用いて、誤読を防ぐチェック実務を解説します。" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2661516129849212" crossorigin="anonymous"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-30">
+    <div class="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="../index.html" class="font-bold text-indigo-600 text-sm">← T番号逆引きチェッカーへ戻る</a>
+      <a href="./index.html" class="text-xs font-bold text-slate-600 hover:underline">コラム一覧</a>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-6 space-y-6">
+    <article class="bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-sm space-y-5 leading-relaxed">
+      <div class="inline-block bg-indigo-50 text-indigo-700 text-xs font-bold px-2.5 py-1 rounded">電子帳簿保存法・クラウド会計連携</div>
+      <h1 class="text-xl sm:text-2xl font-extrabold text-slate-900">会計ソフトのインボイス判別機能！AI-OCRの誤読を防ぐチェック法</h1>
+      <p class="text-sm text-slate-600 bg-slate-50 p-4 rounded-lg border border-slate-200">クラウド会計のAI-OCRによるインボイス自動判別は便利ですが、過信は禁物です。登録番号の誤認識や失効番号の見落としにより仕入税額控除を過大計上すると、税務調査で追徴課税のリスクがあります。本稿ではAI-OCRの誤読パターンと、それを防ぐ二重チェック体制の構築法を徹底解説します。</p>
+      
+      <div class="space-y-5 text-sm sm:text-base text-slate-700">
+        <h2 class="text-lg font-bold text-slate-900 border-b pb-1 mt-6">AI-OCR過信が招くインボイス判定ミスの実態</h2>
+<p class="mt-3 text-slate-700 leading-relaxed">マネーフォワードやfreeeなどのクラウド会計ソフトに搭載されているAI-OCRは、領収書や請求書をアップロードするだけで「T+13桁の登録番号」や税率ごとの税額を自動抽出し、インボイス（適格請求書）か否かを即座に判定します。しかし、実務現場では「数字の0とアルファベットのOの混同」「斜め撮影や影による数字の欠落」「事業者名と番号の紐付けエラー」といった誤読が依然として発生しています。</p>
+<p class="mt-3 text-slate-700 leading-relaxed">特に危険なのは、AIが誤って認識した架空の13桁番号や、類似した別企業の番号を「適格」として処理してしまうケースです。仕入税額控除の適用可否に直結するため、AI任せの登録は過少申告加算税のリスクを常に孕んでいます。</p>
+
+<h2 class="text-lg font-bold text-slate-900 border-b pb-1 mt-6">インボイス判別別の仕訳例と判定基準</h2>
+<p class="mt-3 text-slate-700 leading-relaxed">AI-OCRの判定結果に応じて、会計ソフトは異なる税区分を割り当てます。以下の表は、税込11,000円（本体10,000円、消費税1,000円）の消耗品を購入した場合の判定区分と仕訳処理の比較です（※経過措置80%控除適用期）。</p>
+
+<div class="overflow-x-auto mt-4">
+  <table class="min-w-full border-collapse border border-slate-200 text-sm text-left text-slate-700">
+    <thead class="bg-slate-100 text-slate-900 font-semibold">
+      <tr>
+        <th class="border border-slate-200 px-4 py-2">判定区分</th>
+        <th class="border border-slate-200 px-4 py-2">OCR読取条件</th>
+        <th class="border border-slate-200 px-4 py-2">税区分設定</th>
+        <th class="border border-slate-200 px-4 py-2">借方仕訳例</th>
+        <th class="border border-slate-200 px-4 py-2">貸方仕訳例</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="hover:bg-slate-50">
+        <td class="border border-slate-200 px-4 py-2 font-medium">適格請求書</td>
+        <td class="border border-slate-200 px-4 py-2">有効なT番号を正読・国税庁照会一致</td>
+        <td class="border border-slate-200 px-4 py-2">課税仕入 10%</td>
+        <td class="border border-slate-200 px-4 py-2">消耗品費 10,000<br>仮払消費税等 1,000</td>
+        <td class="border border-slate-200 px-4 py-2">現金 11,000</td>
+      </tr>
+      <tr class="hover:bg-slate-50">
+        <td class="border border-slate-200 px-4 py-2 font-medium">区分記載等（経過措置80%）</td>
+        <td class="border border-slate-200 px-4 py-2">T番号なし（免税事業者・一般個人）</td>
+        <td class="border border-slate-200 px-4 py-2">仕入経過措置 80%</td>
+        <td class="border border-slate-200 px-4 py-2">消耗品費 10,200<br>仮払消費税等 800</td>
+        <td class="border border-slate-200 px-4 py-2">現金 11,000</td>
+      </tr>
+      <tr class="hover:bg-slate-50">
+        <td class="border border-slate-200 px-4 py-2 font-medium">誤読（誤って適格判定）</td>
+        <td class="border border-slate-200 px-4 py-2">電話番号や注文番号をT番号と誤認</td>
+        <td class="border border-slate-200 px-4 py-2 text-rose-600 font-semibold">課税仕入 10%（誤り）</td>
+        <td class="border border-slate-200 px-4 py-2 text-rose-600">仮払税額200円の過大計上</td>
+        <td class="border border-slate-200 px-4 py-2">現金 11,000</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 class="text-lg font-bold text-slate-900 border-b pb-1 mt-6">税務調査で狙われる落とし穴：失効番号と名寄せミス</h2>
+<p class="mt-3 text-slate-700 leading-relaxed">税務調査において調査官が特に着目するのが、「適格請求書発行事業者の失効・取消リストとの照合」です。領収書面上に正しいT番号が印字されていても、取引日時点で事業者が登録を取り消していたり、倒産・廃業していた場合、そのインボイスは無効となります。</p>
+<p class="mt-3 text-slate-700 leading-relaxed">多くの会計ソフトはOCR読取時に国税庁のWeb-APIと連携して番号の有効性を確認しますが、「取引年月日」と「登録失効日」の前後関係までは完全に自動精査できないケースがあります。また、OCRが法人番号から自動生成された社名候補を誤選択し、実取引先とは無関係な登録番号に紐付いてしまう『名寄せミス』も税務調査で仕入税額控除の否認対象となる典型例です。</p>
+
+<h2 class="text-lg font-bold text-slate-900 border-b pb-1 mt-6">実務で実践すべき3つの誤読防止チェック法</h2>
+<p class="mt-3 text-slate-700 leading-relaxed">AI-OCRの誤読による税務リスクを遮断するため、経理部門では以下の3段階チェックを業務フローに組み込む必要があります。</p>
+<p class="mt-3 text-slate-700 leading-relaxed">第1に、<strong>「新規取引先登録時のマスタ完全ロック」</strong>です。初回来訪の飲食店や新規仕入先について、AIが読み取った番号をそのまま通すのではなく、国税庁の「適格請求書発行事業者公表サイト」で名称と所在地が原本と一致するかを目視確認し、承認済みの取引先マスタとして固定します。</p>
+<p class="mt-3 text-slate-700 leading-relaxed">第2に、<strong>「消費税の端数計算ルールの検証」</strong>です。インボイス制度では「一の適格請求書につき税率ごとに1回の端数処理」が原則です。OCRが明細行ごとの消費税を合算して読み取り、端数処理の誤差で1円ずれるケースがあるため、合計欄の税額とOCR抽出額が一致しているかを一覧画面でフィルタリング確認します。</p>
+<p class="mt-3 text-slate-700 leading-relaxed">第3に、<strong>「月次締日におけるT番号未検出・高額取引サンプリング」</strong>です。税区分が「課税仕入100%」になっている仕訳のうち、証憑添付がないものや、T番号フラグが立っていない例外仕訳を検索・抽出し、月次決算の段階で早期是正する体制を整えましょう。</p>
+      </div>
+
+      <div class="bg-indigo-50 border border-indigo-200 rounded-xl p-5 text-center space-y-2 mt-6">
+        <p class="font-bold text-indigo-900">レシートの店舗名・T番号を今すぐ無料チェック</p>
+        <p class="text-xs text-indigo-700">屋号からの運営会社逆引き検索・13桁T番号の打ち間違い判定が10秒で完了します。</p>
+        <a href="../index.html" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm px-6 py-3 rounded-lg transition">T番号逆引きチェッカーを使う →</a>
+      </div>
+
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 mt-4">
+        <span class="text-[11px] font-bold bg-amber-500 text-white px-2 py-0.5 rounded">PR・経理業務の自動化</span>
+        <p class="text-sm font-bold text-slate-900 mt-1">レシートのT番号手入力・国税庁サイトへの毎回照会をゼロにする方法</p>
+        <a href="../index.html#guide" class="inline-block mt-2 text-xs font-bold text-amber-700 underline">インボイス対応の経理効率化ポイントを見る →</a>
+      </div>
+    </article>
+
+    <nav id="chain-nav" class="grid grid-cols-1 sm:grid-cols-2 gap-3"></nav>
+    <section id="related-section" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-3 hidden">
+      <div class="flex items-center justify-between border-b pb-2">
+        <h2 class="text-base font-bold text-slate-900">あわせて読みたいインボイス・経理ガイド</h2>
+        <a href="./index.html" class="text-xs text-indigo-600 font-bold hover:underline">すべて見る →</a>
+      </div>
+      <ul id="related-list" class="space-y-2 text-sm"></ul>
+    </section>
+  </main>
+
+  <footer class="bg-slate-900 text-slate-400 text-xs py-6 mt-12 text-center space-y-2">
+    <div>
+      <a href="../index.html" class="text-slate-300 hover:underline">T番号チェッカーTOP</a> ｜
+      <a href="./index.html" class="text-slate-300 hover:underline">コラム一覧</a> ｜
+      <a href="https://sim.initialassetmanagement.com/" class="text-slate-300 hover:underline">住宅ローン・新NISA計算ツール</a>
+    </div>
+    <p>&copy; 2026 インボイスT番号・経理実務チェッカー事務局</p>
+  </footer>
+
+  <script>
+    fetch('./articles.json')
+      .then(res => res.json())
+      .then(articles => {
+        const currentFile = location.pathname.split('/').pop();
+        const idx = articles.findIndex(a => a.file === currentFile);
+        const nav = document.getElementById('chain-nav');
+        if (idx !== -1) {
+          if (idx > 0) {
+            const prev = articles[idx - 1];
+            nav.innerHTML += `<a href="./${prev.file}" class="p-3 bg-white rounded-lg border border-slate-200 hover:border-indigo-500 text-xs"><span class="text-slate-400 block">← 前の記事</span><span class="font-bold text-slate-800 line-clamp-1">${prev.title}</span></a>`;
+          }
+          if (idx < articles.length - 1) {
+            const next = articles[idx + 1];
+            nav.innerHTML += `<a href="./${next.file}" class="p-3 bg-white rounded-lg border border-slate-200 hover:border-indigo-500 text-xs sm:text-right"><span class="text-slate-400 block">次の記事 →</span><span class="font-bold text-slate-800 line-clamp-1">${next.title}</span></a>`;
+          }
+        }
+        const others = articles.filter(a => a.file !== currentFile);
+        if (others.length > 0) {
+          document.getElementById('related-section').classList.remove('hidden');
+          const picks = others.sort(() => 0.5 - Math.random()).slice(0, 5);
+          document.getElementById('related-list').innerHTML = picks.map(p =>
+            `<li><a href="./${p.file}" class="block p-2.5 rounded-lg bg-slate-50 hover:bg-indigo-50 text-slate-800 hover:text-indigo-700 font-medium transition">・${p.title}</a></li>`
+          ).join('');
+        }
+      }).catch(() => {});
+  </script>
+</body>
+</html>

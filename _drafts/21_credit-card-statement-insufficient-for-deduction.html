@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>クレカ利用明細だけでは控除不可！Web領収書回収の自動化ノウハウ｜インボイスT番号・経理実務ガイド</title>
+  <meta name="description" content="クレジットカードの利用明細書は適格請求書（インボイス）に該当せず、単体では仕入税額控除が受けられません。本記事ではWeb領収書を効率的に自動回収する仕組みや判定基準の比較表、税務調査対策を解説します。" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2661516129849212" crossorigin="anonymous"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-30">
+    <div class="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="../index.html" class="font-bold text-indigo-600 text-sm">← T番号逆引きチェッカーへ戻る</a>
+      <a href="./index.html" class="text-xs font-bold text-slate-600 hover:underline">コラム一覧</a>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-6 space-y-6">
+    <article class="bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-sm space-y-5 leading-relaxed">
+      <div class="inline-block bg-indigo-50 text-indigo-700 text-xs font-bold px-2.5 py-1 rounded">EC・ネット決済・クレカ明細のインボイス対応</div>
+      <h1 class="text-xl sm:text-2xl font-extrabold text-slate-900">クレカ利用明細だけでは控除不可！Web領収書回収の自動化ノウハウ</h1>
+      <p class="text-sm text-slate-600 bg-slate-50 p-4 rounded-lg border border-slate-200">クレジットカード利用明細書は信販会社発行の書類であり、売手発行の適格請求書に該当しないため仕入税額控除の適用要件を満たしません。本記事では、経理を圧迫するWeb領収書回収を自動化する実務ノウハウと、税務調査で仕入税額控除を否認されないための必須チェックポイントを分かりやすく解説します。</p>
+      
+      <div class="space-y-5 text-sm sm:text-base text-slate-700">
+        <h2 class="text-lg font-bold text-slate-900 border-b pb-1 mt-6">クレカ利用明細では仕入税額控除ができない理由</h2><p class="mt-3 text-slate-700 leading-relaxed">インボイス制度（適格請求書等保存方式）の下では、原則として「課税資産の譲渡等を行った売手」が交付した適格請求書の保存が仕入税額控除の要件となります。クレジットカード会社が発行する利用代金明細書は、カード会社が立替払いをした事実を知らせる書類に過ぎず、商品の売手自身が発行した書類ではないため、適格請求書として認められません。</p><p class="mt-2 text-slate-700 leading-relaxed">そのため、ECサイトやWebサービス等でカード決済を行った場合は、加盟店やプラットフォームのマイページ等から発行される「Web領収書」「適格請求書（インボイス）」を別途取得・保存する必要があります。</p><h2 class="text-lg font-bold text-slate-900 border-b pb-1 mt-6">証憑ごとの判定基準と具体的な仕訳例</h2><p class="mt-3 text-slate-700 leading-relaxed">カード決済取引における各種書類の仕入税額控除の可否および判定基準は以下の通りです。</p><div class="mt-4 overflow-x-auto"><table class="min-w-full divide-y divide-slate-200 border border-slate-200 text-sm text-left"><thead class="bg-slate-100 text-slate-700"><tr><th class="px-4 py-2 font-semibold border-b">証憑の種類</th><th class="px-4 py-2 font-semibold border-b">控除可否</th><th class="px-4 py-2 font-semibold border-b">発行者</th><th class="px-4 py-2 font-semibold border-b">留意点</th></tr></thead><tbody class="divide-y divide-slate-200"><tr class="hover:bg-slate-50"><td class="px-4 py-2 font-medium text-slate-900">クレジットカード利用明細書</td><td class="px-4 py-2 text-red-600 font-bold">不可</td><td class="px-4 py-2 text-slate-600">信販会社</td><td class="px-4 py-2 text-slate-600">売手発行ではないため保存しても控除不可</td></tr><tr class="hover:bg-slate-50"><td class="px-4 py-2 font-medium text-slate-900">売手発行のWeb領収書（PDF等）</td><td class="px-4 py-2 text-green-600 font-bold">可能</td><td class="px-4 py-2 text-slate-600">サービス提供者</td><td class="px-4 py-2 text-slate-600">登録番号・税率・税額等のインボイス要件が必須</td></tr><tr class="hover:bg-slate-50"><td class="px-4 py-2 font-medium text-slate-900">購入時配信の決済完了メール</td><td class="px-4 py-2 text-green-600 font-bold">条件付可</td><td class="px-4 py-2 text-slate-600">販売元ECサイト</td><td class="px-4 py-2 text-slate-600">メール本文に登録番号等の記載があれば電帳法に沿って保存可</td></tr></tbody></table></div><div class="mt-4 p-4 bg-slate-50 rounded border border-slate-200"><p class="font-semibold text-slate-800 text-sm">【仕訳例】Web広告費110,000円（税込）をカード決済した場合</p><p class="text-xs text-slate-600 mt-1">① 正しい適格請求書（Web領収書）を回収・保存できた場合（税抜経理）：</p><p class="font-mono text-xs bg-white p-2 border rounded mt-1 text-slate-800">（借方）広告宣伝費　100,000 /（貸方）未払金　110,000<br>（借方）仮払消費税等 10,000 /</p><p class="text-xs text-slate-600 mt-2">② クレカ明細のみで適格請求書を回収できなかった場合（控除不可・経過措置未考慮）：</p><p class="font-mono text-xs bg-white p-2 border rounded mt-1 text-slate-800">（借方）広告宣伝費（控除対象外） 110,000 /（貸方）未払金　110,000</p></div><h2 class="text-lg font-bold text-slate-900 border-b pb-1 mt-6">Web領収書回収の負担を解消する自動化ノウハウ</h2><p class="mt-3 text-slate-700 leading-relaxed">従業員に手作業で管理画面から領収書をダウンロードさせて提出を待つ運用は、回収漏れや月次決算の遅延を招きます。以下の3段階で自動化を進めることが有効です。</p><ul class="mt-2 list-disc list-inside space-y-1 text-slate-700"><li><strong>コーポレートカード連携機能の活用：</strong>法人カードとクラウド経費精算システムをAPI連携させ、利用履歴を自動取得。明細にWeb領収書添付を必須化し、未提出者に自動催促するワークフローを構築します。</li><li><strong>証憑自動回収ツールの導入：</strong>Amazonビジネス、Google、Meta、AWSなどの主要プラットフォームと連携し、インボイス付き領収書PDFを定期的に自動巡回して取得・格納する専用ツール（またはRPA）を活用します。</li><li><strong>受信用専用アドレスとメール自動転送：</strong>決済通知メールがインボイスとなるサービスについては、経理専用受信用メールアドレス（会計システムのインボックス）へ自動転送する設定を徹底します。</li></ul><h2 class="text-lg font-bold text-slate-900 border-b pb-1 mt-6">税務調査で指摘されやすい実務上の落とし穴</h2><p class="mt-3 text-slate-700 leading-relaxed">クレカ決済に関する税務調査で最も指摘されやすいのが、<strong>「海外ベンダー決済におけるリバースチャージ方式や登録国外事業者の確認漏れ」</strong>です。ZoomやSlack、海外サーバー等のサブスクリプション決済では、カード利用明細だけで国内取引と同様に課税仕入れとして処理しているケースが多発しています。国内事業者向け「電気通信利用役務の提供」に該当する場合、登録国外事業者から発行されたインボイスでなければ控除は認められません。</p><p class="mt-2 text-slate-700 leading-relaxed">また、Web領収書をダウンロードした電子データは、<strong>電子帳簿保存法の電子取引データ保存要件</strong>（改ざん防止措置および検索要件の確保）を満たして保管しなければなりません。紙に出力して保存するだけでは不備とみなされ、最悪の場合仕入税額控除が否認されるリスクがあるため、社内保管体制の再点検が不可欠です。</p>
+      </div>
+
+      <div class="bg-indigo-50 border border-indigo-200 rounded-xl p-5 text-center space-y-2 mt-6">
+        <p class="font-bold text-indigo-900">レシートの店舗名・T番号を今すぐ無料チェック</p>
+        <p class="text-xs text-indigo-700">屋号からの運営会社逆引き検索・13桁T番号の打ち間違い判定が10秒で完了します。</p>
+        <a href="../index.html" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm px-6 py-3 rounded-lg transition">T番号逆引きチェッカーを使う →</a>
+      </div>
+
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 mt-4">
+        <span class="text-[11px] font-bold bg-amber-500 text-white px-2 py-0.5 rounded">PR・経理業務の自動化</span>
+        <p class="text-sm font-bold text-slate-900 mt-1">レシートのT番号手入力・国税庁サイトへの毎回照会をゼロにする方法</p>
+        <a href="../index.html#guide" class="inline-block mt-2 text-xs font-bold text-amber-700 underline">インボイス対応の経理効率化ポイントを見る →</a>
+      </div>
+    </article>
+
+    <nav id="chain-nav" class="grid grid-cols-1 sm:grid-cols-2 gap-3"></nav>
+    <section id="related-section" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-3 hidden">
+      <div class="flex items-center justify-between border-b pb-2">
+        <h2 class="text-base font-bold text-slate-900">あわせて読みたいインボイス・経理ガイド</h2>
+        <a href="./index.html" class="text-xs text-indigo-600 font-bold hover:underline">すべて見る →</a>
+      </div>
+      <ul id="related-list" class="space-y-2 text-sm"></ul>
+    </section>
+  </main>
+
+  <footer class="bg-slate-900 text-slate-400 text-xs py-6 mt-12 text-center space-y-2">
+    <div>
+      <a href="../index.html" class="text-slate-300 hover:underline">T番号チェッカーTOP</a> ｜
+      <a href="./index.html" class="text-slate-300 hover:underline">コラム一覧</a> ｜
+      <a href="https://sim.initialassetmanagement.com/" class="text-slate-300 hover:underline">住宅ローン・新NISA計算ツール</a>
+    </div>
+    <p>&copy; 2026 インボイスT番号・経理実務チェッカー事務局</p>
+  </footer>
+
+  <script>
+    fetch('./articles.json')
+      .then(res => res.json())
+      .then(articles => {
+        const currentFile = location.pathname.split('/').pop();
+        const idx = articles.findIndex(a => a.file === currentFile);
+        const nav = document.getElementById('chain-nav');
+        if (idx !== -1) {
+          if (idx > 0) {
+            const prev = articles[idx - 1];
+            nav.innerHTML += `<a href="./${prev.file}" class="p-3 bg-white rounded-lg border border-slate-200 hover:border-indigo-500 text-xs"><span class="text-slate-400 block">← 前の記事</span><span class="font-bold text-slate-800 line-clamp-1">${prev.title}</span></a>`;
+          }
+          if (idx < articles.length - 1) {
+            const next = articles[idx + 1];
+            nav.innerHTML += `<a href="./${next.file}" class="p-3 bg-white rounded-lg border border-slate-200 hover:border-indigo-500 text-xs sm:text-right"><span class="text-slate-400 block">次の記事 →</span><span class="font-bold text-slate-800 line-clamp-1">${next.title}</span></a>`;
+          }
+        }
+        const others = articles.filter(a => a.file !== currentFile);
+        if (others.length > 0) {
+          document.getElementById('related-section').classList.remove('hidden');
+          const picks = others.sort(() => 0.5 - Math.random()).slice(0, 5);
+          document.getElementById('related-list').innerHTML = picks.map(p =>
+            `<li><a href="./${p.file}" class="block p-2.5 rounded-lg bg-slate-50 hover:bg-indigo-50 text-slate-800 hover:text-indigo-700 font-medium transition">・${p.title}</a></li>`
+          ).join('');
+        }
+      }).catch(() => {});
+  </script>
+</body>
+</html>

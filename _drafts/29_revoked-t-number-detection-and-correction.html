@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>取引先のT番号が失効していたら？即座にできる確認法と仕訳の修正｜インボイスT番号・経理実務ガイド</title>
+  <meta name="description" content="請求書のT番号が失効していた場合の対処法を解説。国税庁サイトでの即座な確認手順から、経過措置を踏まえた仕訳修正の具体例、税務調査で指摘されやすい盲点まで経理担当者が押さえるべきポイントを網羅しました。" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2661516129849212" crossorigin="anonymous"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-30">
+    <div class="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="../index.html" class="font-bold text-indigo-600 text-sm">← T番号逆引きチェッカーへ戻る</a>
+      <a href="./index.html" class="text-xs font-bold text-slate-600 hover:underline">コラム一覧</a>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-6 space-y-6">
+    <article class="bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-sm space-y-5 leading-relaxed">
+      <div class="inline-block bg-indigo-50 text-indigo-700 text-xs font-bold px-2.5 py-1 rounded">請求書・領収書の記載要件と不備修正</div>
+      <h1 class="text-xl sm:text-2xl font-extrabold text-slate-900">取引先のT番号が失効していたら？即座にできる確認法と仕訳の修正</h1>
+      <p class="text-sm text-slate-600 bg-slate-50 p-4 rounded-lg border border-slate-200">受領した適格請求書のT番号が失効していた場合、取引時点のステータスに応じて仕入税額控除の計算や仕訳の修正が必要です。失効日以降の取引は適格請求書として扱えないため、経過措置（80％控除等）への振替処理が必須となります。本稿では確認手順から修正仕訳、税務調査リスクまで分かりやすく解説します。</p>
+      
+      <div class="space-y-5 text-sm sm:text-base text-slate-700">
+        <h2 class="text-lg font-bold text-slate-900 border-b pb-1 mt-6">1. T番号失効時の即座な確認手順と判定基準</h2>
+<p class="mt-2 text-slate-700 leading-relaxed">取引先から受領した請求書に記載された登録番号（T番号）が無効・失効している疑いがある場合、まずは「国税庁適格請求書発行事業者公表サイト」で最新の登録情報を確認します。確認の核心は「取引日（納品日・役務提供完了日）」が「失効年月日」の前か後かという点です。</p>
+<p class="mt-2 text-slate-700 leading-relaxed">事業者が登録を取り消された、または廃業等で失効した場合、公表サイトには「取消年月日」や「失効年月日」が掲載されます。失効日より前の取引であれば、発行された請求書は適格請求書として有効であり、全額仕入税額控除が可能です。一方、失効日以降の取引である場合は適格請求書とは認められず、区分記載請求書等と同様の経過措置（2026年9月30日までは80％控除）を適用して処理しなければなりません。</p>
+
+<h2 class="text-lg font-bold text-slate-900 border-b pb-1 mt-6">2. 失効パターン別の判定基準と修正仕訳例</h2>
+<p class="mt-2 text-slate-700 leading-relaxed">取引先が失効していた場合、会計ソフト上の税区分を「課税仕入（10％・適格）」から「課税仕入（10％・経過措置80％）」などへ変更する必要があります。税抜100,000円（税込110,000円）の支払手数料を経費計上していた場合の修正処理を比較します。</p>
+
+<div class="overflow-x-auto mt-4">
+  <table class="min-w-full text-sm text-left border border-slate-200">
+    <thead class="bg-slate-100 text-slate-700">
+      <tr>
+        <th class="border border-slate-200 px-3 py-2">取引日の該当年月日</th>
+        <th class="border border-slate-200 px-3 py-2">インボイス効力</th>
+        <th class="border border-slate-200 px-3 py-2">仕訳例（税抜経理・経過措置80%適用）</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-200 text-slate-600">
+      <tr>
+        <td class="border border-slate-200 px-3 py-2 font-medium text-slate-800">失効日前の取引</td>
+        <td class="border border-slate-200 px-3 py-2 text-green-700 font-semibold">有効（全額控除）</td>
+        <td class="border border-slate-200 px-3 py-2">(借) 支払手数料 100,000<br>(借) 仮払消費税等 10,000 / (貸) 普通預金 110,000</td>
+      </tr>
+      <tr>
+        <td class="border border-slate-200 px-3 py-2 font-medium text-slate-800">失効日以後の取引</td>
+        <td class="border border-slate-200 px-3 py-2 text-amber-700 font-semibold">無効（経過措置）</td>
+        <td class="border border-slate-200 px-3 py-2">(借) 支払手数料 102,000<br>(借) 仮払消費税等 8,000 / (貸) 普通預金 110,000</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p class="mt-2 text-slate-700 leading-relaxed">失効日以後の取引では、控除できない消費税相当額2,000円（10,000円の20％）が本体価格へ加算され、費用計上額が102,000円に増加します。期末決算時や消費税申告時に差額をまとめて調整すると差異分析が困難になるため、月次決算の段階で該当伝票の税区分を修正することが実務上重要です。</p>
+
+<h2 class="text-lg font-bold text-slate-900 border-b pb-1 mt-6">3. 実務上の落とし穴：税務調査で狙われる「自動入力の放置」</h2>
+<p class="mt-2 text-slate-700 leading-relaxed">税務調査で最も指摘を受けやすいリスクは、マスタデータや過去の登録番号に依存した「税区分の自動判定放置」です。取引開始時にT番号が有効であった取引先であっても、期の途中で免税事業者へ戻るための取消届出を提出していたり、法人が解散・休眠していたりする事例が増加しています。</p>
+<p class="mt-2 text-slate-700 leading-relaxed">会計ソフト上で取引先コードとT番号を紐づけて「自動的に適格仕入」として処理している場合、請求書面に印字されたT番号が存在していても公表サイト上はすでに失効しているという不整合を見落とします。税務調査では公表サイトの履歴データと突合されるため、失効後の取引について過大に仕入税額控除を適用していたことが発覚すると、消費税の追徴課税（本税＋過少申告加算税＋延滞税）が課されます。定期的なAPI連携による一括照会や、四半期ごとの主要取引先ステータス確認を社内ルール化することが不可欠です。</p>
+      </div>
+
+      <div class="bg-indigo-50 border border-indigo-200 rounded-xl p-5 text-center space-y-2 mt-6">
+        <p class="font-bold text-indigo-900">レシートの店舗名・T番号を今すぐ無料チェック</p>
+        <p class="text-xs text-indigo-700">屋号からの運営会社逆引き検索・13桁T番号の打ち間違い判定が10秒で完了します。</p>
+        <a href="../index.html" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm px-6 py-3 rounded-lg transition">T番号逆引きチェッカーを使う →</a>
+      </div>
+
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 mt-4">
+        <span class="text-[11px] font-bold bg-amber-500 text-white px-2 py-0.5 rounded">PR・経理業務の自動化</span>
+        <p class="text-sm font-bold text-slate-900 mt-1">レシートのT番号手入力・国税庁サイトへの毎回照会をゼロにする方法</p>
+        <a href="../index.html#guide" class="inline-block mt-2 text-xs font-bold text-amber-700 underline">インボイス対応の経理効率化ポイントを見る →</a>
+      </div>
+    </article>
+
+    <nav id="chain-nav" class="grid grid-cols-1 sm:grid-cols-2 gap-3"></nav>
+    <section id="related-section" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-3 hidden">
+      <div class="flex items-center justify-between border-b pb-2">
+        <h2 class="text-base font-bold text-slate-900">あわせて読みたいインボイス・経理ガイド</h2>
+        <a href="./index.html" class="text-xs text-indigo-600 font-bold hover:underline">すべて見る →</a>
+      </div>
+      <ul id="related-list" class="space-y-2 text-sm"></ul>
+    </section>
+  </main>
+
+  <footer class="bg-slate-900 text-slate-400 text-xs py-6 mt-12 text-center space-y-2">
+    <div>
+      <a href="../index.html" class="text-slate-300 hover:underline">T番号チェッカーTOP</a> ｜
+      <a href="./index.html" class="text-slate-300 hover:underline">コラム一覧</a> ｜
+      <a href="https://sim.initialassetmanagement.com/" class="text-slate-300 hover:underline">住宅ローン・新NISA計算ツール</a>
+    </div>
+    <p>&copy; 2026 インボイスT番号・経理実務チェッカー事務局</p>
+  </footer>
+
+  <script>
+    fetch('./articles.json')
+      .then(res => res.json())
+      .then(articles => {
+        const currentFile = location.pathname.split('/').pop();
+        const idx = articles.findIndex(a => a.file === currentFile);
+        const nav = document.getElementById('chain-nav');
+        if (idx !== -1) {
+          if (idx > 0) {
+            const prev = articles[idx - 1];
+            nav.innerHTML += `<a href="./${prev.file}" class="p-3 bg-white rounded-lg border border-slate-200 hover:border-indigo-500 text-xs"><span class="text-slate-400 block">← 前の記事</span><span class="font-bold text-slate-800 line-clamp-1">${prev.title}</span></a>`;
+          }
+          if (idx < articles.length - 1) {
+            const next = articles[idx + 1];
+            nav.innerHTML += `<a href="./${next.file}" class="p-3 bg-white rounded-lg border border-slate-200 hover:border-indigo-500 text-xs sm:text-right"><span class="text-slate-400 block">次の記事 →</span><span class="font-bold text-slate-800 line-clamp-1">${next.title}</span></a>`;
+          }
+        }
+        const others = articles.filter(a => a.file !== currentFile);
+        if (others.length > 0) {
+          document.getElementById('related-section').classList.remove('hidden');
+          const picks = others.sort(() => 0.5 - Math.random()).slice(0, 5);
+          document.getElementById('related-list').innerHTML = picks.map(p =>
+            `<li><a href="./${p.file}" class="block p-2.5 rounded-lg bg-slate-50 hover:bg-indigo-50 text-slate-800 hover:text-indigo-700 font-medium transition">・${p.title}</a></li>`
+          ).join('');
+        }
+      }).catch(() => {});
+  </script>
+</body>
+</html>

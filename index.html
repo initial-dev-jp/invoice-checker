@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>店舗名・屋号からインボイスT番号逆引きチェッカー【登録番号検索・有効性判定】</title>
+  <meta name="description" content="レシートの店舗名・屋号からインボイス制度の適格請求書発行事業者登録番号（T番号）をスピード逆引き検索。13桁のT番号の入力ミス・チェックデジット即時判定にも対応。" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans JP", sans-serif; }
+  </style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2661516129849212"
+     crossorigin="anonymous"></script>
+  <meta name="google-site-verification" content="WnQkHz8E__69Yl9alNh4i5LljyBWfaZb0xO8C8KREO8" />
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-30">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="bg-indigo-600 text-white text-xs font-bold px-2 py-1 rounded">無料ツール</span>
+        <h1 class="text-base sm:text-lg font-bold text-slate-900">インボイスT番号・屋号逆引きチェッカー</h1>
+      </div>
+      <div class="flex items-center gap-3 sm:gap-4">
+        <a href="#guide" class="text-xs sm:text-sm text-indigo-600 hover:underline font-medium">経理対処ガイド</a>
+        <a href="./columns/index.html" class="text-xs sm:text-sm text-slate-600 hover:text-indigo-600 hover:underline font-medium">実務コラム一覧</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-6 space-y-6">
+
+    <div id="ad-slot-top" class="w-full bg-slate-100 border border-dashed border-slate-300 rounded-lg py-3 text-center text-xs text-slate-400">
+      スポンサーリンク（AdSense広告枠①）
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+      <!-- 左カラム：店舗名・屋号からT番号を逆引き検索 -->
+      <section class="lg:col-span-6 bg-white p-6 rounded-xl shadow-sm border border-slate-200 space-y-4">
+        <div class="flex items-center gap-2 border-b pb-3">
+          <span class="bg-indigo-100 text-indigo-700 text-xs font-extrabold px-2.5 py-1 rounded">機能1</span>
+          <h2 class="text-base font-bold text-slate-900">店舗名・屋号・サービス名から逆引き</h2>
+        </div>
+
+        <p class="text-xs text-slate-600 leading-relaxed">
+          国税庁のデータベースは「運営法人名（または本名）」で登録されているため、レシートの<strong>店舗名・屋号・アプリ名</strong>だけでは直接ヒットしないケースが多発します。名称を入力して専用の逆引き検索を実行してください。
+        </p>
+
+        <div class="space-y-3">
+          <div>
+            <label for="shopName" class="block text-xs font-bold text-slate-700 mb-1">店舗名・屋号・会社名・サービス名</label>
+            <input type="text" id="shopName" placeholder="例：タイムズ駐車場 / スターバックス / 〇〇商店"
+              class="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          </div>
+
+          <div>
+            <label for="shopArea" class="block text-xs font-bold text-slate-700 mb-1">都道府県・市区町村（個人店・地域店舗の絞り込み用・任意）</label>
+            <input type="text" id="shopArea" placeholder="例：東京都港区 / 宇都宮市"
+              class="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2">
+            <button onclick="searchReverse('tnumber')" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs sm:text-sm py-3 px-4 rounded-lg transition shadow-sm">
+              ① T番号を直接逆引き検索 →
+            </button>
+            <button onclick="searchReverse('company')" class="w-full bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs sm:text-sm py-3 px-4 rounded-lg transition shadow-sm">
+              ② 運営会社名を特定する →
+            </button>
+          </div>
+
+          <div class="pt-1">
+            <a href="https://www.invoice-kohyo.nta.go.jp/" target="_blank" rel="noopener noreferrer"
+              class="block w-full text-center bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs py-2.5 rounded-lg border border-slate-300 transition">
+              国税庁「適格請求書発行事業者公表サイト」公式検索を開く ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 p-3.5 rounded-lg border border-slate-200 space-y-2">
+          <div class="text-xs font-bold text-slate-700">レシート表記と登録法人名が異なる代表例（ワンクリック検索）</div>
+          <div class="flex flex-wrap gap-1.5 text-[11px]">
+            <button onclick="quickFill('タイムズ24株式会社')" class="bg-white hover:bg-indigo-50 border border-slate-300 px-2 py-1 rounded">タイムズ駐車場</button>
+            <button onclick="quickFill('三井不動産リアルティ株式会社')" class="bg-white hover:bg-indigo-50 border border-slate-300 px-2 py-1 rounded">三井のリパーク</button>
+            <button onclick="quickFill('アマゾンジャパン合同会社')" class="bg-white hover:bg-indigo-50 border border-slate-300 px-2 py-1 rounded">Amazon.co.jp</button>
+            <button onclick="quickFill('株式会社メルカリ')" class="bg-white hover:bg-indigo-50 border border-slate-300 px-2 py-1 rounded">メルカリ</button>
+            <button onclick="quickFill('東日本旅客鉄道株式会社')" class="bg-white hover:bg-indigo-50 border border-slate-300 px-2 py-1 rounded">JR東日本・Suica</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 右カラム：T番号（13桁）のリアルタイム構造・チェックデジット判定 -->
+      <section class="lg:col-span-6 bg-white p-6 rounded-xl shadow-sm border border-slate-200 space-y-4">
+        <div class="flex items-center gap-2 border-b pb-3">
+          <span class="bg-emerald-100 text-emerald-700 text-xs font-extrabold px-2.5 py-1 rounded">機能2</span>
+          <h2 class="text-base font-bold text-slate-900">T番号（13桁）の打ち間違い・形式チェック</h2>
+        </div>
+
+        <p class="text-xs text-slate-600 leading-relaxed">
+          請求書やレシートの印字がかすれて「1と7」「0と8」が読みづらい場合、13桁の番号を入力すると<strong>国税庁のチェックデジット計算式で番号の整合性を即時判定</strong>します（ハイフンや全角数字も自動補正）。
+        </p>
+
+        <div>
+          <label for="tNumberInput" class="block text-xs font-bold text-slate-700 mb-1">インボイス登録番号（T + 13桁の数字）</label>
+          <input type="text" id="tNumberInput" placeholder="例：T1234567890123（数字13桁のみでもOK）"
+            oninput="validateTNumber()"
+            class="w-full border border-slate-300 rounded-lg px-3.5 py-3 text-base font-mono tracking-wider focus:outline-none focus:ring-2 focus:ring-emerald-500" />
+        </div>
+
+        <div id="tResultBox" class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-2">
+          <div id="tStatusTitle" class="text-sm font-bold text-slate-500">番号を入力すると自動判定します</div>
+          <p id="tStatusDesc" class="text-xs text-slate-500">先頭の「T」の有無やハイフンは自動で整形されます。</p>
+          <div id="tActionArea" class="pt-2 hidden flex flex-wrap gap-2">
+            <button onclick="copyFormattedT()" class="bg-white hover:bg-slate-100 text-slate-800 border border-slate-300 text-xs font-bold px-3 py-2 rounded-lg">
+              整形済み番号をコピー
+            </button>
+            <a id="ntaDirectLink" href="https://www.invoice-kohyo.nta.go.jp/" target="_blank" rel="noopener noreferrer"
+              class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-2 rounded-lg">
+              国税庁サイトでこの番号の登録状況を確認 ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 space-y-1.5">
+          <span class="text-[11px] font-bold bg-amber-500 text-white px-2 py-0.5 rounded">PR・経理業務の自動化</span>
+          <p class="text-sm font-bold text-slate-900">T番号の手入力・国税庁サイトへの毎回照会をゼロにする方法</p>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            インボイス対応のクラウド会計ソフトなら、レシートをスマホで撮るだけでT番号の自動読み取り・国税庁データベースとの自動照合・8割控除の自動仕訳まで完結します。
+          </p>
+          <a href="#guide" class="inline-block pt-1 text-xs font-bold text-amber-700 underline">
+            インボイス対応の経理効率化ポイントを見る →
+          </a>
+        </div>
+      </section>
+
+    </div>
+
+    <article id="guide" class="bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-sm space-y-6 leading-relaxed">
+      <h2 class="text-lg sm:text-xl font-bold text-slate-900 border-b pb-3">レシートにT番号がない・屋号しか載っていない時の経理対処法</h2>
+
+      <div class="space-y-4 text-sm text-slate-700">
+        <div>
+          <h3 class="font-bold text-base text-slate-900 mb-1">1. 店舗名（屋号）と登録法人名が違うケースの調べ方</h3>
+          <p>飲食店・コインパーキング・フランチャイズ店舗・ECモール出店者などは、レシートに店舗ブランド名のみが印字され、国税庁には運営会社名で登録されています。レシート下部の「運営会社表記」や公式サイトの「特定商取引法に基づく表記」で法人名を確認すると、正確なT番号にたどり着けます。</p>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-base text-slate-900 mb-1">2. 税込1万円未満なら「少額特例」でT番号が不要になる場合がある</h3>
+          <p>基準期間（2年前）の課税売上高が1億円以下などの条件を満たす事業者は、2029年9月30日まで「税込1万円未満の課税仕入れ」についてインボイスの保存がなくても帳簿の記載のみで仕入税額控除が認められます。少額レシートのT番号調査に時間を奪われないよう、自社が対象か先に確認しましょう。</p>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-base text-slate-900 mb-1">3. 登録がない免税事業者からの仕入れは「経過措置（8割控除・5割控除）」を適用</h3>
+          <p>逆引き検索の結果、取引先がインボイス未登録（免税事業者）だった場合でも、全額が控除不可になるわけではありません。経過措置期間中は仕入税額相当額の一定割合（80%または50%）を控除できるため、会計ソフト上で適切な税区分を選択して処理します。</p>
+        </div>
+      </div>
+    </article>
+
+    <section id="column-hub" class="bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-sm space-y-4 hidden">
+      <div class="flex items-center justify-between border-b pb-3">
+        <h2 class="text-base sm:text-lg font-bold text-slate-900">インボイス制度・経理実務の疑問解決ガイド</h2>
+        <a href="./columns/index.html" class="text-xs sm:text-sm font-bold text-indigo-600 hover:underline">全記事一覧を見る →</a>
+      </div>
+      <ul id="top-column-list" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-sm"></ul>
+    </section>
+
+    <section class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-3">
+      <h2 class="text-sm font-bold text-slate-800 border-b pb-2">関連する無料Web計算・実務ツール</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+        <a href="https://sim.initialassetmanagement.com/" target="_blank" rel="noopener" class="block p-3 rounded-lg bg-slate-50 hover:bg-blue-50 border border-slate-200 transition">
+          <span class="font-bold text-blue-700 block">住宅ローン繰り上げ返済 vs 新NISAシミュレーター ↗</span>
+          <span class="text-slate-500">ローン控除・金利差・運用利回りから最終手残り差額を10秒試算</span>
+        </a>
+        <a href="https://initialassetmanagement.com/" target="_blank" rel="noopener" class="block p-3 rounded-lg bg-slate-50 hover:bg-slate-100 border border-slate-200 transition">
+          <span class="font-bold text-slate-800 block">INITIAL ASSET MANAGEMENT 公式サイト ↗</span>
+          <span class="text-slate-500">運営会社情報・開発ツール・事業案内</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-slate-900 text-slate-400 text-xs py-8 mt-12">
+    <div class="max-w-5xl mx-auto px-4 space-y-4">
+      <div class="flex flex-wrap gap-4">
+        <button onclick="toggleModal('privacy-modal')" class="hover:text-white underline">プライバシーポリシー・免責事項</button>
+        <a href="./columns/index.html" class="hover:text-white underline">インボイス実務コラム一覧</a>
+        <a href="https://sim.initialassetmanagement.com/" class="hover:text-white underline">住宅ローン・新NISA計算ツール</a>
+      </div>
+      <p class="leading-relaxed text-[11px] text-slate-500">
+        【免責事項】本ツールはインボイス登録番号（法人番号ベース13桁）のチェックデジット構造検証および検索補助を行うものであり、最新の登録有効性・失効状況については必ず国税庁「適格請求書発行事業者公表サイト」の公式情報をご確認ください。
+      </p>
+      <p class="text-[11px] text-slate-500">&copy; 2026 インボイスT番号・経理実務チェッカー事務局 All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <div id="privacy-modal" class="fixed inset-0 bg-black/50 hidden items-center justify-center p-4 z-50">
+    <div class="bg-white rounded-xl max-w-lg w-full p-6 space-y-3 text-xs text-slate-700 max-h-[80vh] overflow-y-auto">
+      <div class="flex justify-between items-center border-b pb-2">
+        <h3 class="font-bold text-sm text-slate-900">プライバシーポリシー・広告配信について</h3>
+        <button onclick="toggleModal('privacy-modal')" class="text-slate-400 hover:text-slate-700 text-lg">&times;</button>
+      </div>
+      <p>当サイトでは、第三者配信の広告サービス（Googleアドセンス、各種アフィリエイトプログラム）を利用しており、ユーザーの興味に応じた商品やサービスの広告を表示するため、クッキー（Cookie）を使用しております。</p>
+      <p>Cookieを使用することで当サイトはお客様のコンピュータを識別できるようになりますが、お客様個人を特定できるものではありません。</p>
+      <div class="pt-2 text-right">
+        <button onclick="toggleModal('privacy-modal')" class="bg-slate-800 text-white px-4 py-1.5 rounded">閉じる</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let formattedT = '';
+
+    function toggleModal(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      el.classList.toggle('flex');
+    }
+
+    function quickFill(corpName) {
+      document.getElementById('shopName').value = corpName;
+      searchReverse('tnumber');
+    }
+
+    function searchReverse(mode) {
+      const name = document.getElementById('shopName').value.trim();
+      const area = document.getElementById('shopArea').value.trim();
+      if (!name) {
+        alert('店舗名・屋号・会社名のいずれかを入力してください。');
+        return;
+      }
+      const base = area ? `${name} ${area}` : name;
+      const query = mode === 'tnumber'
+        ? `${base} "T" 適格請求書発行事業者 登録番号`
+        : `${base} 運営会社 会社概要 特定商取引法`;
+      window.open(`https://www.google.com/search?q=${encodeURIComponent(query)}`, '_blank', 'noopener');
+    }
+
+    function validateTNumber() {
+      const raw = document.getElementById('tNumberInput').value;
+      const normalized = raw
+        .replace(/[０-９]/g, s => String.fromCharCode(s.charCodeAt(0) - 0xFEE0))
+        .replace(/^[TtＴｔ]/, '')
+        .replace(/[-\sー－]/g, '');
+
+      const box = document.getElementById('tResultBox');
+      const title = document.getElementById('tStatusTitle');
+      const desc = document.getElementById('tStatusDesc');
+      const actions = document.getElementById('tActionArea');
+
+      if (!normalized) {
+        formattedT = '';
+        box.className = 'p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-2';
+        title.className = 'text-sm font-bold text-slate-500';
+        title.textContent = '番号を入力すると自動判定します';
+        desc.textContent = '先頭の「T」の有無やハイフンは自動で整形されます。';
+        actions.classList.add('hidden');
+        return;
+      }
+
+      if (!/^\d+$/.test(normalized)) {
+        box.className = 'p-4 rounded-xl border border-rose-200 bg-rose-50 space-y-2';
+        title.className = 'text-sm font-bold text-rose-700';
+        title.textContent = '数字以外の文字が含まれています';
+        desc.textContent = '先頭の「T」に続けて13桁の半角数字を入力してください。';
+        actions.classList.add('hidden');
+        return;
+      }
+
+      if (normalized.length !== 13) {
+        box.className = 'p-4 rounded-xl border border-amber-200 bg-amber-50 space-y-2';
+        title.className = 'text-sm font-bold text-amber-800';
+        title.textContent = `現在 ${normalized.length} 桁です（あと ${Math.abs(13 - normalized.length)} 桁${normalized.length < 13 ? '不足' : '超過'}）`;
+        desc.textContent = 'インボイス登録番号は「T ＋ 13桁の数字」で構成されています。';
+        actions.classList.add('hidden');
+        return;
+      }
+
+      const checkDigit = parseInt(normalized[0], 10);
+      let sum = 0;
+      for (let i = 1; i <= 12; i++) {
+        const p = parseInt(normalized[i], 10);
+        const q = (i % 2 === 1) ? 1 : 2;
+        sum += p * q;
+      }
+      const expected = 9 - (sum % 9);
+
+      formattedT = 'T' + normalized;
+      actions.classList.remove('hidden');
+
+      if (checkDigit === expected) {
+        box.className = 'p-4 rounded-xl border border-emerald-300 bg-emerald-50 space-y-2';
+        title.className = 'text-sm font-bold text-emerald-800';
+        title.textContent = `✓ 番号構造は正常です（${formattedT}）`;
+        desc.textContent = 'チェックデジット（検査用数字）が一致しました。読み取りミス・打ち間違いはありません。';
+      } else {
+        box.className = 'p-4 rounded-xl border border-rose-300 bg-rose-50 space-y-2';
+        title.className = 'text-sm font-bold text-rose-700';
+        title.textContent = `✕ 番号の打ち間違いの可能性があります（${formattedT}）`;
+        desc.textContent = '国税庁のチェックデジット計算と一致しません。1と7、0と8、3と8などの見間違いがないか再確認してください。';
+      }
+    }
+
+    function copyFormattedT() {
+      if (!formattedT) return;
+      navigator.clipboard.writeText(formattedT);
+      alert(`「${formattedT}」をクリップボードにコピーしました。`);
+    }
+
+    fetch('./columns/articles.json')
+      .then(r => r.json())
+      .then(list => {
+        if (!list.length) return;
+        document.getElementById('column-hub').classList.remove('hidden');
+        const latest = list.slice(-6).reverse();
+        document.getElementById('top-column-list').innerHTML = latest.map(a =>
+          `<li><a href="./columns/${a.file}" class="block p-3 rounded-lg bg-slate-50 hover:bg-indigo-50 border border-slate-200/60 font-medium text-slate-800 hover:text-indigo-700 transition">・${a.title}</a></li>`
+        ).join('');
+      }).catch(() => {});
+  </script>
+</body>
+</html>
